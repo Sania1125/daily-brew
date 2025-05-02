@@ -1,27 +1,21 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f2eb;
+/* === Menu Section Styles === */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
   }
   
-  header {
-    background-color: #6f4e37;
-    color: white;
-    padding: 1rem;
+  .menu-item {
     text-align: center;
   }
   
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+  .menu-item img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  #hero {
-    background: url('../images/coffee-hero.jpg') no-repeat center center/cover;
-    padding: 100px;
-    color: #fff;
-    text-align: center;
-  }
   

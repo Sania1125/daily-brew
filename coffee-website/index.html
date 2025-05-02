@@ -2,53 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daily Brew - Fresh, handcrafted coffee to fuel your day." />
   <title>Daily Brew | Coffee Shop</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <header>
     <h1>Daily Brew</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Start Your Day with Daily Brew</h2>
-    <p>Fresh, handcrafted coffee to fuel your morning.</p>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <h2>Start Your Day with Daily Brew</h2>
+      <p>Fresh, handcrafted coffee to fuel your morning.</p>
+    </section>
 
-  <section class="menu-preview">
-    <h2>Our Coffee</h2>
-    <div class="menu-items">
-      <div class="item">
-        <img src="images/espresso.jpg" alt="Espresso">
-        <h3>Espresso</h3>
-        <p>$3.00</p>
+    <section id="menu" class="menu-preview">
+      <h2>Our Coffee</h2>
+      <div class="menu-items">
+        <div class="item">
+          <img src="images/espresso.jpg" alt="A fresh cup of espresso" />
+          <h3>Espresso</h3>
+          <p>$3.00</p>
+        </div>
+        <div class="item">
+          <img src="images/cappuccino.jpg" alt="A frothy cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>$4.00</p>
+        </div>
+        <div class="item">
+          <img src="images/latte.jpg" alt="A creamy latte" />
+          <h3>Latte</h3>
+          <p>$4.50</p>
+        </div>
       </div>
-      <div class="item">
-        <img src="images/cappuccino.jpg" alt="Cappuccino">
-        <h3>Cappuccino</h3>
-        <p>$4.00</p>
-      </div>
-      <div class="item">
-        <img src="images/latte.jpg" alt="Latte">
-        <h3>Latte</h3>
-        <p>$4.50</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer>
+  <footer id="contact">
     <p>&copy; 2025 Daily Brew. All rights reserved.</p>
   </footer>
 
   <script src="js/main.js"></script>
+  <noscript>Please enable JavaScript to enjoy the full experience.</noscript>
 </body>
 </html>

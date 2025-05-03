@@ -1,1 +1,68 @@
-<h1>Menu Page</h1><p>Coming soon!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Brew | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Daily Brew</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  </nav>
+
+  <header class="hero-section">
+    <h1>Our Menu</h1>
+    <p>Handcrafted coffee, delicious treats, and more await you.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>☕ Coffee</h2>
+      <ul>
+        <li>Espresso – $2.50</li>
+        <li>Cappuccino – $3.00</li>
+        <li>Latte – $3.50</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🍵 Tea & Other Drinks</h2>
+      <ul>
+        <li>Green Tea – $2.00</li>
+        <li>Matcha Latte – $3.50</li>
+        <li>Iced Lemon Tea – $2.75</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🥐 Bakery</h2>
+      <ul>
+        <li>Croissant – $2.00</li>
+        <li>Blueberry Muffin – $2.50</li>
+        <li>Banana Bread – $2.75</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café Team</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      document.title = document.body.classList.contains("dark-mode")
+        ? "Daily Brew | Menu (Dark Mode)"
+        : "Daily Brew | Menu";
+    }
+  </script>
+</body>
+</html>
